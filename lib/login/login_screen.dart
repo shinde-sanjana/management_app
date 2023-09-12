@@ -231,8 +231,7 @@ class _FormScreenState extends State<FormScreen> {
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 97, 8, 119),
                                       fontSize: 20,
-                                      fontWeight: FontWeight.bold
-                                      ),
+                                      fontWeight: FontWeight.bold),
                                 ),
                               ),
                             ),
@@ -273,8 +272,8 @@ class _FormScreenState extends State<FormScreen> {
   // ignore: non_constant_identifier_names
   void check_if_already_login() async {
     // print("login Screen init");
-    emailController.text = "sanjana.s@myriadcara.com";
-    passController.text = "Smile@123";
+    emailController.text = "emailController";
+    passController.text = "passController";
     loginUser();
     logindata = await SharedPreferences.getInstance();
     newuser = (logindata.getBool("login") ?? true);
